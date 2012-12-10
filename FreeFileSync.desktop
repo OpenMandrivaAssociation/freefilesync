@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Folder Comparison and Synchronization
+Exec=FreeFileSync
+Icon=/usr/share/FreeFileSync/Help/img/ffsicon.png
+Name=FreeFileSync
+NoDisplay=false
+StartupNotify=true
+Categories=FileTransfer;X-MandrivaLinux-CrossDesktop;GTK;Utility;
+Terminal=false
+Type=Application
+
