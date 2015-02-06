@@ -4,7 +4,7 @@
 
 Name:		freefilesync
 Version:	5.9
-Release:	%mkrel 1
+Release:	2
 Summary:	A free file sync tool
 Group:		Networking/File transfer
 License:	GPLv3
