@@ -3,17 +3,21 @@
 %define		oname FreeFileSync
 
 Name:		freefilesync
-Version:	5.9
-Release:	2
+Version:	11.16
+Release:	1
 Summary:	A free file sync tool
 Group:		Networking/File transfer
 License:	GPLv3
 Url:		http://sourceforge.net/projects/freefilesync/
-Source0:	http://ignum.dl.sourceforge.net/project/freefilesync/freefilesync/v%{version}/%{oname}_%{version}_source.zip
+Source0:  https://freefilesync.org/download/FreeFileSync_%{version}_Source.zip
+#Source0:	http://ignum.dl.sourceforge.net/project/freefilesync/freefilesync/v%{version}/%{oname}_%{version}_source.zip
 Source1:	%{oname}.desktop
-BuildRequires:	gtkmm2.4-devel
-BuildRequires:	wxgtku2.8-devel >= 2.8.11
-BuildRequires:	boost-devel >= 1.42.0
+BuildRequires:  imagemagick
+BuildRequires:  pkgconfig(gtkmm-3.0)
+BuildRequires:  wxgtk3.1-devel
+BuildRequires:  boost-devel
+BuildRequires:  pkgconfig(libcurl)
+BuildRequires:  pkgconfig(libssh2)
 
 %description
 FreeFileSync is a folder comparison and synchronization tool.
@@ -22,7 +26,7 @@ FreeFileSync is a folder comparison and synchronization tool.
 %setup -q -c %{name}-%{version}
 
 %build
-%make
+%make_build
 
 %install
 %makeinstall_std
