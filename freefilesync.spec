@@ -26,8 +26,15 @@ FreeFileSync is a folder comparison and synchronization tool.
 %setup -q -c %{name}-%{version}
 
 %build
-%make_build
+# FFS
+%make_build -C \
+	FreeFileSync/Source \
+	EXENAME=FreeFileSync
 
+# RTS
+%make_build -C \
+	FreeFileSync/Source/RealTimeSync \
+	EXENAME=RealTimeSync
 %install
 %makeinstall_std
 %__install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/applications/%{oname}.desktop
