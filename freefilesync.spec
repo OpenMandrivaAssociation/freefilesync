@@ -18,6 +18,7 @@ BuildRequires:  wxgtk3.1-devel
 BuildRequires:  boost-devel
 BuildRequires:  pkgconfig(libcurl)
 BuildRequires:  pkgconfig(libssh2)
+BuildRequires:	pkgconfig(glib-2.0)
 
 %description
 FreeFileSync is a folder comparison and synchronization tool.
