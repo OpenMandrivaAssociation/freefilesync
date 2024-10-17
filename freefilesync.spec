@@ -8,7 +8,7 @@ Release:	2
 Summary:	A free file sync tool
 Group:		Networking/File transfer
 License:	GPLv3
-Url:		http://sourceforge.net/projects/freefilesync/
+Url:		https://sourceforge.net/projects/freefilesync/
 Source0:	http://ignum.dl.sourceforge.net/project/freefilesync/freefilesync/v%{version}/%{oname}_%{version}_source.zip
 Source1:	%{oname}.desktop
 BuildRequires:	gtkmm2.4-devel
