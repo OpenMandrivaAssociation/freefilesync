@@ -11,6 +11,7 @@ License:	GPLv3
 Url:		https://sourceforge.net/projects/freefilesync/
 Source0:	http://ignum.dl.sourceforge.net/project/freefilesync/freefilesync/v%{version}/%{oname}_%{version}_source.zip
 Source1:	%{oname}.desktop
+BuildRequires:	make
 BuildRequires:	gtkmm2.4-devel
 BuildRequires:	wxgtku2.8-devel >= 2.8.11
 BuildRequires:	boost-devel >= 1.42.0
